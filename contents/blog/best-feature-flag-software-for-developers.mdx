@@ -89,7 +89,7 @@ Developers who want feature flags as part of a complete build-measure-learn work
 
 More recently, it has expanded into experimentation, release monitoring, and AI model configuration. It also offers "guarded releases" that automatically roll back changes when performance metrics degrade.
 
-The trade-off is cost. Their pricing is based on client-side MAUs, and can scale quickly. It also doesn't include session replay or error tracking, so you'll need separate tools for those.
+The trade-off is cost. Their pricing is based on service connections and client-side MAUs, and can scale quickly. LaunchDarkly now includes session replay, error monitoring, logs, and traces, but these tools are built around release monitoring rather than general product analytics or user research.
 
 **Strengths:**
 
@@ -319,7 +319,7 @@ You can steer it from [Slack](/slack), the [web app](/ai), or your own editor vi
 <details>
   <summary>What's the difference between PostHog and LaunchDarkly?</summary>
 
-**LaunchDarkly** is a dedicated feature management platform built for enterprise-scale flag operations. It has the most sophisticated targeting rules, governance workflows, and SDK coverage, but doesn't include analytics, session replay, or error tracking.
+**LaunchDarkly** is a dedicated feature management platform built for enterprise-scale flag operations. It has the most sophisticated targeting rules, governance workflows, and SDK coverage. It also includes session replay and error monitoring, but these focus on release monitoring rather than general product analytics or user research.
 
 **PostHog** takes a different approach by embedding feature flags into an all-in-one developer platform. You can roll out a flag, watch session replays of affected users, check analytics for impact, and catch errors – all without switching tools. It's more affordable for most teams but doesn't match LaunchDarkly's depth in pure feature management.
 
